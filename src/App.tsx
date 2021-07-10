@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -12,6 +11,7 @@ function App() {
         <p>Hello Vite + React!</p>
         <p>Commit Ref: {import.meta.env.VITE_COMMIT_REF}</p>
         <p>Netlify UI Variable: {import.meta.env.VITE_NETLIFY_CUSTOM}</p>
+        <p>Not Netlify: {import.meta.env.VITE_NOT_NETLIFY}</p>
       </header>
     </div>
   )
